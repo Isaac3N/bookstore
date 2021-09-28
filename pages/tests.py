@@ -5,6 +5,7 @@ from django.urls import reverse
 # Create your tests here.
 
 class HomepageTests(SimpleTestCase):
+
     def test_homepage_status_code(self):
         response = self.client.get('/')
         self.assertEqual(response.status_code, 200)
@@ -21,4 +22,6 @@ class HomepageTests(SimpleTestCase):
         response = self.client.get('/')
         self.assertNotContains( 
             response, 'Hello world')
+
+
 
