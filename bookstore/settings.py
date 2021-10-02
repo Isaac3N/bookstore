@@ -39,8 +39,10 @@ INSTALLED_APPS = [
 
     'users',
     'pages',
-    'crispy_forms', 
+    'books', 
 
+
+    'crispy_forms', 
     'allauth',
     'allauth.account'
 ]
